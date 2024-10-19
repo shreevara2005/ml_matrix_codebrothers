@@ -7,7 +7,7 @@ import joblib
 app = Flask(__name__)
 
 # Load and prepare the dataset
-df = pd.read_csv(r"C:\Users\User\Desktop\Healthcare-Diabetes.csv")
+df = pd.read_csv(r"Healthcare-Diabetes.csv")
 a=['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
 X=df[a]
 y = df['Outcome']
